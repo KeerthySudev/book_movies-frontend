@@ -1,0 +1,84 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 10px 20px;
+    color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .logo h4 {
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .searchbar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .formContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .formContainer input {
+    width: 300px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .formContainer input:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 150, 255, 0.5);
+  }
+  
+  .booking, .movies {
+    margin-left: 20px;
+    position: relative;
+    left: 400px;
+  }
+  .movies{
+    left: 500px;
+  }
+  
+  .signin button, .booking button, .movies button {
+    background-color: #ff6347;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .signin button{
+    background-color: rgb(248, 68, 100);
+    
+  }
+  
+  .signin button:hover, .booking button:hover, .movies button:hover {
+    background-color: #ff4500;
+  }
+  
+  .booking a, .movies a {
+    color: white;
+    text-decoration: none;
+  }

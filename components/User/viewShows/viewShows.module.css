@@ -1,0 +1,129 @@
+/* ShowsTable.module.css */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .thead {
+    background-color: #f37254; /* BookMyShow's signature color */
+  }
+  
+  .th {
+    padding: 16px 20px;
+    text-align: left;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .tbodyRow {
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tbodyRow:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .tbodyCell {
+    padding: 16px 20px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .button {
+    background-color: #f37254;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #d9583a;
+  }
+
+/* styles.module.css */
+
+/* Container for the date picker */
+.datePickerContainer {
+  margin-bottom: 1rem; /* Space below the date picker */
+  margin-top: 1rem;
+}
+
+/* Label for the date picker */
+.dateLabel {
+  font-size: larger;
+  color: #333;
+  margin-bottom: 1.25rem;
+  display: block;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Date picker input */
+.datePicker {
+  width: 154px;
+  height: 29px;
+  padding: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 9px;
+  background-color: gainsboro;
+  font-size: 0.875rem;
+  transition: border-color 0.2s ease;
+}
+
+.text {
+  font-weight: bold;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: larger;
+  color: #333;
+  margin-top: 5.25rem;
+  display: block;
+  margin-left: 33.25rem;
+}
+
+  
+  @media screen and (max-width: 768px) {
+    .table, .thead, .tbodyRow, .th, .tbodyCell {
+      display: block;
+      width: 100%;
+    }
+  
+    .thead {
+      display: none; 
+    }
+  
+    .tbodyRow {
+      margin-bottom: 10px;
+      border: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+  
+    .tbodyCell {
+      display: block;
+      text-align: right;
+      position: relative;
+      padding-left: 50%;
+    }
+  
+    .tbodyCell::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+  

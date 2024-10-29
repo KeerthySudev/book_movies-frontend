@@ -1,0 +1,244 @@
+
+.content h2, .container h4{
+    margin-left: 20px;
+}
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+.card {
+    overflow: hidden;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.searchButtons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    margin-left: 20px;
+  }
+  
+  .searchButton {
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 1px solid rgb(248, 68, 100);
+    color: rgb(248, 68, 100);
+    
+  }
+  .resetButton {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 1px solid #ff6347;
+    margin-left: 20px;
+  }
+  .searchButton:hover {
+    background-color: #ccc;
+  }
+  .searchButton.selected {
+    background-color: rgb(248, 68, 100);
+    color: white;
+  }
+  
+
+
+.poster {
+    width: 197px;
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cardContent {
+    padding: 15px;
+}
+
+.cardContent h3 {
+    margin-top: 0;
+}
+
+.cardContent p {
+    margin: 5px 0;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.button:first-of-type {
+    background-color: #007bff;
+}
+
+.button:first-of-type:hover {
+    background-color: #0056b3;
+}
+
+.button:last-of-type {
+    background-color: #dc3545;
+}
+
+.button:last-of-type:hover {
+    background-color: #c82333;
+} 
+
+
+.container{
+    width: 100%;
+    height: auto;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 10px 20px;
+    color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .logo h4 {
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .searchbar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .formContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .formContainer input {
+    width: 300px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .formContainer input:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 150, 255, 0.5);
+  }
+  
+  .signin, .booking {
+    margin-left: 20px;
+  }
+  
+  .signin button, .booking button {
+    background-color: #ff6347;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .signin button{
+    background-color: rgb(248, 68, 100);
+    
+  }
+  
+  .signin button:hover, .booking button:hover {
+    background-color: #ff4500;
+  }
+  
+  .booking a {
+    color: white;
+    text-decoration: none;
+  }
+  
+
+.content{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+.filters{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    height: 100vh;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}

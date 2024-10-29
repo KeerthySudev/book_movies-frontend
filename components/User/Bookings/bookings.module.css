@@ -1,0 +1,67 @@
+/* BookingsPage.module.css */
+
+.bookingContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bookingHistory {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: transform 0.3s;
+  }
+  
+  .bookingHistory:hover {
+    transform: scale(1.02);
+  }
+  
+  .movieTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .bookingDetails {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .detailItem {
+    width: 48%;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .detailItem p {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .theatreDetails {
+    color: #555;
+    font-style: italic;
+  }
+  
+  .totalPrice {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  @media (max-width: 600px) {
+    .detailItem {
+      width: 100%;
+    }
+  }
+  
